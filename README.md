@@ -1,6 +1,6 @@
 # npmdoc-combokeys
 
-#### api documentation for  [combokeys (v2.4.6)](https://github.com/PolicyStat/combokeys)  [![npm package](https://img.shields.io/npm/v/npmdoc-combokeys.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-combokeys) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-combokeys.svg)](https://travis-ci.org/npmdoc/node-npmdoc-combokeys)
+#### basic api documentation for  [combokeys (v2.4.6)](https://github.com/PolicyStat/combokeys)  [![npm package](https://img.shields.io/npm/v/npmdoc-combokeys.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-combokeys) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-combokeys.svg)](https://travis-ci.org/npmdoc/node-npmdoc-combokeys)
 
 #### Handles keyboard shortcuts in the browser
 
@@ -92,7 +92,8 @@
             "dist/**"
         ]
     },
-    "version": "2.4.6"
+    "version": "2.4.6",
+    "bin": {}
 }
 ```
 
