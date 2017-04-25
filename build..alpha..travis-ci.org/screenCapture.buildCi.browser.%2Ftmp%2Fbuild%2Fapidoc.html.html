@@ -65,6 +65,15 @@
 
         <li>
 
+            <a class="apidocElementLiA" href="#apidoc.element.combokeys.dom_event">
+            function <span class="apidocSignatureSpan">combokeys.</span>dom_event
+            <span class="apidocSignatureSpan">(element, event, callback, capture)</span>
+            </a>
+
+        </li>
+
+        <li>
+
             <a class="apidocElementLiA" href="#apidoc.element.combokeys.reset">
             function <span class="apidocSignatureSpan">combokeys.</span>reset
             <span class="apidocSignatureSpan">()</span>
@@ -81,6 +90,37 @@
         <li>
 
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">combokeys.</span>instances</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.combokeys.dom_event">module combokeys.dom_event</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.combokeys.dom_event.dom_event">
+            function <span class="apidocSignatureSpan">combokeys.</span>dom_event
+            <span class="apidocSignatureSpan">(element, event, callback, capture)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.combokeys.dom_event.off">
+            function <span class="apidocSignatureSpan">combokeys.dom_event.</span>off
+            <span class="apidocSignatureSpan">(element, event, callback, capture)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.combokeys.dom_event.on">
+            function <span class="apidocSignatureSpan">combokeys.dom_event.</span>on
+            <span class="apidocSignatureSpan">(element, event, callback, capture)</span>
+            </a>
 
         </li>
 
@@ -167,6 +207,23 @@
 
 
     <h2>
+        <a href="#apidoc.element.combokeys.dom_event" id="apidoc.element.combokeys.dom_event">
+        function <span class="apidocSignatureSpan">combokeys.</span>dom_event
+        <span class="apidocSignatureSpan">(element, event, callback, capture)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function on(element, event, callback, capture) {
+  !element.addEventListener &amp;&amp; (event = 'on' + event)
+  ;(element.addEventListener || element.attachEvent).call(element, event, callback, capture)
+  return callback
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
         <a href="#apidoc.element.combokeys.reset" id="apidoc.element.combokeys.reset">
         function <span class="apidocSignatureSpan">combokeys.</span>reset
         <span class="apidocSignatureSpan">()</span>
@@ -197,6 +254,62 @@ module.exports = function () {
 
 
 
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.combokeys.dom_event" id="apidoc.module.combokeys.dom_event">module combokeys.dom_event</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.combokeys.dom_event.dom_event" id="apidoc.element.combokeys.dom_event.dom_event">
+        function <span class="apidocSignatureSpan">combokeys.</span>dom_event
+        <span class="apidocSignatureSpan">(element, event, callback, capture)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function on(element, event, callback, capture) {
+  !element.addEventListener &amp;&amp; (event = 'on' + event)
+  ;(element.addEventListener || element.attachEvent).call(element, event, callback, capture)
+  return callback
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.combokeys.dom_event.off" id="apidoc.element.combokeys.dom_event.off">
+        function <span class="apidocSignatureSpan">combokeys.dom_event.</span>off
+        <span class="apidocSignatureSpan">(element, event, callback, capture)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function off(element, event, callback, capture) {
+  !element.removeEventListener &amp;&amp; (event = 'on' + event)
+  ;(element.removeEventListener || element.detachEvent).call(element, event, callback, capture)
+  return callback
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.combokeys.dom_event.on" id="apidoc.element.combokeys.dom_event.on">
+        function <span class="apidocSignatureSpan">combokeys.dom_event.</span>on
+        <span class="apidocSignatureSpan">(element, event, callback, capture)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function on(element, event, callback, capture) {
+  !element.addEventListener &amp;&amp; (event = 'on' + event)
+  ;(element.addEventListener || element.attachEvent).call(element, event, callback, capture)
+  return callback
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
 
 
 </div>
